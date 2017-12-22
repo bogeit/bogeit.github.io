@@ -302,7 +302,12 @@
           <hr>
 <p>#测试标题</p>
 <h2 id="LINUX安装指南"><a href="#LINUX安装指南" class="headerlink" title="LINUX安装指南"></a>LINUX安装指南</h2><h3 id="命令如下："><a href="#命令如下：" class="headerlink" title="命令如下："></a>命令如下：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ls -trh <span class="string">"/tmp"</span></span><br></pre></td></tr></table></figure>
-<p>链接：<a href="http://www.baidu.com" title="点我！" target="_blank" rel="noopener">百度官网</a><br>
+<pre><code>#!bin/bash
+if [ $# -eq 0 ];then
+    echo &quot;Usage: $0 1 2&quot;
+    exit 22
+fi
+</code></pre><p>链接：<a href="http://www.baidu.com" title="点我！" target="_blank" rel="noopener">百度官网</a><br>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/12/20/test/#more" rel="contents">
