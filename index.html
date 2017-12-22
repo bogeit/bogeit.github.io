@@ -302,12 +302,9 @@
           <hr>
 <p>#测试标题</p>
 <h2 id="LINUX安装指南"><a href="#LINUX安装指南" class="headerlink" title="LINUX安装指南"></a>LINUX安装指南</h2><h3 id="命令如下："><a href="#命令如下：" class="headerlink" title="命令如下："></a>命令如下：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ls -trh <span class="string">"/tmp"</span></span><br></pre></td></tr></table></figure>
-<pre><code>#!bin/bash
-if [ $# -eq 0 ];then
-    echo &quot;Usage: $0 1 2&quot;
-    exit 22
-fi
-</code></pre><p>链接：<a href="http://www.baidu.com" title="点我！" target="_blank" rel="noopener">百度官网</a><br>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!bin/bash</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="variable">$#</span> -eq 0 ];<span class="keyword">then</span></span><br><span class="line">	<span class="built_in">echo</span> <span class="string">"Usage: <span class="variable">$0</span> 1 2"</span></span><br><span class="line">	<span class="built_in">exit</span> 22</span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line">print(sys.argv)</span><br><span class="line">print(sys.path)</span><br></pre></td></tr></table></figure>
+<p>链接：<a href="http://www.baidu.com" title="点我！" target="_blank" rel="noopener">百度官网</a><br>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/12/20/test/#more" rel="contents">
