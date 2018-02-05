@@ -229,6 +229,136 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://bogeit.coding.me/2018/02/05/shell-python-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Boge">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bogeit">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/02/05/shell-python-1/" itemprop="url">shell-python</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-05T16:41:26+08:00">
+                2018-02-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="论shell和python编程在企业运维中的重要性"><a href="#论shell和python编程在企业运维中的重要性" class="headerlink" title="论shell和python编程在企业运维中的重要性"></a>论shell和python编程在企业运维中的重要性</h1><p>在现今互联网+时代下，尤其是各种公有云和私有云的应用普及，企业的服务器（包括物理服务器、虚拟机）成倍的增长，对于我们运维人员来说是一个极大的考验，在面对这几十上面台的服务器，怎么去做好运维服务的标准化、流程化、规范化和自动化，是我们运维人员迫切需要去思考的问题！</p>
+<p>要实现IT运维的自动化就需要去学会编程语言，目前主流的Linux系统发行版centos下最流行的运维自动化语言就是Shell和python。在这两者之间，shell几乎是所有涉及运维需求的企业都必须使用的自动化编程语言，特别是在运维工作中的业务快速部署、数据备份及处理、服务监控、服务启动停止、日志分析及清理等环节里，shell开发是必不可少的。</p>
+<h2 id="什么是shell"><a href="#什么是shell" class="headerlink" title="什么是shell"></a>什么是shell</h2><p>shell是一个命令解释器，它的作用是用来解释和执行系统操作用户输入的各种命令及程序的，用户每输入一条命令，shell就解释执行一条。这种从键盘一输入命令，就可以立即得到回应的对话方式，称为交互的方式。<br>shell存在于操作系统的最外层，负责与用户直接对话，把用户的输入解释给操作系统，并处理各种各样的操作系统的输出结果，然后输出到屏幕返回给用户。输入系统用户名和密码并登录到linux后的所有操作都是由shell解释并执行的。</p>
+<h2 id="什么是shell脚本"><a href="#什么是shell脚本" class="headerlink" title="什么是shell脚本"></a>什么是shell脚本</h2><p>在我们理解了shell后，再来理解shell脚本就很简单了。当命令或程序语句不在命令行下执行，而是通过一个程序文件来执行时，该程序就被称为shell脚本。如果在shell脚本里内置了很多命令、语句及循环控制，然后将这些命令一次性执行完毕，这种通过文件执行脚本的方式称为非交互的方式。shell脚本类似于DOS系统下的批处理程序（早期扩展名一般为“.bat”）。用户可以在shell脚本中输入一系列的命令及命令语句组合。这些命令、变量和流程控制语句等有机的结合起来，就形成了功能强大的shell脚本了。</p>
+<h2 id="怎么样写好shell脚本"><a href="#怎么样写好shell脚本" class="headerlink" title="怎么样写好shell脚本"></a>怎么样写好shell脚本</h2><p>shell脚本语法并不复杂，脚本编程方式为面向过程式及函数式编程，想要写好shell脚本，除了掌握好shell脚本语法，另外一个很关键的点是要熟练掌握linux系统的操作命令，及各个软件服务的运行原理、部署方式和排错思路等等，只有把这些融会贯通，才能写出高效强大的运维shell脚本。</p>
+<h2 id="python介绍"><a href="#python介绍" class="headerlink" title="python介绍"></a>python介绍</h2><p>python是现今非常流行的一门编程语言，其在自动化运维编程方面，有着得天独厚的先天优势。<br>Python是一种面向对象的解释型计算机程序设计语言，其语法简洁清晰，特色之一是强制用空白符(white space)作为语句缩进。<br>Python具有丰富和强大的库。它常被昵称为胶水语言，能够把用其他语言制作的各种模块（尤其是C/C++）很轻松地联结在一起，用来写运维脚本或平台那只是python众多功能的冰山一角，像现如今主流的云管理平台openstack就是采用python编写的，另外批量化管理工具saltstack也是基于python编写的。<br>Python让我们运维水平可以提升到一个更高的层次，运维具备了研发能力，给了我们做运维的小伙伴很大的技术上升空间，我觉得这才是运维技术的真正方向，因为做不到研发层面，靠之前老模式的运维方式比如每天敲些基本命令和配置搭建个服务器或者写几个自动化脚本是很难让一个公司的运维水平得到一个质提升的，另外从个人技术角度如果仅仅把这些当做自己的核心竞争力，那是不够的。</p>
+<p>以我的运维工作经验来看，shell和python应该是用来互补的，取长补短，shell更适合系统底层，而python则更适合处理复杂的业务逻辑，及开发出复杂的运维软件工具，实现通过WEB页面访问来管理使用。用一句说来总结，shell的终极目标是系统管理的自动化，python的终极目标是运维操作的自动化。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    <div>
+      
+    </div>
+    
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://bogeit.coding.me/2018/02/05/shell-python/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -906,7 +1036,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
